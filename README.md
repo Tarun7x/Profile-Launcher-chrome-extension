@@ -1,2 +1,2 @@
-# Profile-Launcher-chrome-extesion
+# Profile-Launcher-chrome-extension
 Easily access your accounts with this extension.

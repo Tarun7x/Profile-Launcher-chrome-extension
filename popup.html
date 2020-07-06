@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile Launcher</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+        
+        html,body {
+
+            font-family: 'georgia';
+            font-size: 14px;
+            margin: 0;
+            min-height: 180x;
+            padding: 0;
+            width: 384px;
+            }
+            
+            h1{
+                font-family: 'georgia', monospace;
+                font-size: 22px;
+                font-weight: 20;
+                align-items: center;
+                margin: 0;
+                color: black;
+
+            }
+            #link1:hover {
+                color: #2a6496;
+                outline: 0;
+                text-decoration: underline;
+            }
+            #link1 {
+                color:#428bca;
+                outline: 0;
+                text-decoration: none;
+            }
+            
+            a:link, a:visited {
+                color: #000;
+                outline: 0;
+                text-decoration: none;
+            }
+
+            img{
+                width: 25px;
+
+            }
+            .modal-header{
+                border-bottom: 0.5px solid #dadada;
+            }
+            .modal-content{
+                font-family: 'platino';
+                font-size: 18px;
+                padding: 0 85px;
+                text-align: center;
+            }
+            .modal-icons{
+                border-top: 0.5px solid #dadada;
+                height: 59px;
+                width: 100%; 
+                align-items: center;
+            }
+            .logo {
+                padding:13px;
+            }
+            .logo-icon{
+                vertical-align: text-bottom;
+                margin-right: 12px;
+            }
+            .version {
+                color: #444;
+                font-size: 18px;
+            }
+            .flex-container {
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 5px 10px 30px;
+            }
+            .flex {
+                opacity: 1;
+                transition: opacity 0.2s ease-in-out;
+                width: 120px;
+            }
+            .flex:hover {
+                opacity: 0.5;
+            }
+            .flex .fa {
+                font-size: 40px;
+                color: #2f5876;
+            }
+            .btn {
+                color: #fff !important;
+                border-radius: .25rem;
+                padding: .375rem .75rem;
+                line-height: 1rem;
+                font-size: 1rem; 
+                text-align: center;
+                vertical-align: middle;
+                background-color: black;
+                border: 1px solid 007bff;
+                margin-top: .25rem;
+                margin-bottom: .25rem;
+                box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.3);
+            }
+            .btn:hover {
+                color: #fff;
+                background-color: #0069d9;
+                border-color: #0062cc;
+            }
+            .flex a div{
+                visibility: hidden;
+            }
+            .flex:hover{
+                cursor: pointer;
+            }
+            .flex:hover div{
+                visibility: visible;
+
+            }
+
+    </style>
+</head>
+<body>
+    <center>
+  <div class="modal-header">
+      <h1 class="logo">
+          <img src="images/my-logo.png" alt="Profile Launcher" ; class="logo-icon">Profile Launcher<span class="version"></span>
+
+      </h1>
+
+  </div>
+</center>
+  <div class="modal-content">
+    <p id="title_text"><span id="name"></span>Profiles</p>
+
+  </div>
+  <div class="modal-icons">
+      <div class="flex-container">
+          <div class="flex">
+              <a id="website_link" href="#!" target="_blank">
+                <i class="fa fa-globe" style="color: black"></i>
+                <div>Website</div>
+            </a>
+          </div>
+          <div class="flex">
+            <a id="linkedin_link" href="#!" target="_blank">
+              <i class="fa fa-linkedin" style="color: black"></i>
+              <div>LinkedIn</div>
+          </a>
+        </div>
+        <div class="flex">
+            <a id="twitter_link" href="#!" target="_blank">
+              <i class="fa fa-twitter" style="color:black "></i>
+              <div>Twitter</div>
+          </a>
+        </div>
+        <div class="flex">
+            <a id="github_link" href="#!" target="_blank">
+              <i class="fa fa-github" style="color:black"></i>
+              <div>GitHub</div>
+          </a>
+        </div>
+        <div class="flex">
+            <a  id="instagram_link" href="#!" target="_blank">
+              <i class="fa fa-instagram" style="color:black"></i>
+              <div>Insta</div>
+          </a>
+        </div>
+        <div class="flex">
+            <a  id="whatsapp_link" href="#!" target="_blank">
+              <i class="fa fa-whatsapp" style="color:black"></i>
+              <div>WhatsApp</div>
+          </a>
+        </div> 
+      </div>
+
+  </div>
+  
+  <br>
+  <center><a class="btn" role="button" href="edit.html">Edit</a></center>
+  <br>
+  <div style="text-align:center; width: 100%; margin-top: 1px;">
+    <p>
+        
+        Developed by <a id="link1"  href="https://www.linkedin.com/in/teja-tarun-g-439410182"  target="_blank">TejaTarun</a>
+    </p> 
+  </div> 
+  
+  <script src="popup.js"></script>
+
+</body>
+</html>
